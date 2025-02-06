@@ -18,6 +18,7 @@ from src.learn.ch_25.router import router as ch_25_router
 from src.learn.ch_26.router import router as ch_26_router
 from src.learn.ch_27.router import router as ch_27_router
 from src.learn.ch_28.router import router as ch_28_router
+from src.learn.ch_29.router import router as ch_29_router
 
 app = FastAPI()
 app.include_router(ch_19_router)
@@ -33,3 +34,4 @@ app.include_router(ch_25_router)
 app.include_router(ch_26_router)
 app.include_router(ch_27_router)
 app.include_router(ch_28_router)
+app.include_router(ch_29_router)
