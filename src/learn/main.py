@@ -14,6 +14,7 @@ from src.learn.ch_24.router import (
     validation_exception_handler,
     custom_http_exception_handler,
 )
+from src.learn.ch_25.router import router as ch_25_router
 
 app = FastAPI()
 app.include_router(ch_19_router)
@@ -25,3 +26,4 @@ app.include_router(ch_24_router)
 app.exception_handler(UnicornException)(unicorn_exception_handler)
 app.exception_handler(StarletteHTTPException)(custom_http_exception_handler)
 app.exception_handler(RequestValidationError)(validation_exception_handler)
+app.include_router(ch_25_router)
