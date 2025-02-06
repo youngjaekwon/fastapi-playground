@@ -16,6 +16,7 @@ from src.learn.ch_24.router import (
 )
 from src.learn.ch_25.router import router as ch_25_router
 from src.learn.ch_26.router import router as ch_26_router
+from src.learn.ch_27.router import router as ch_27_router
 
 app = FastAPI()
 app.include_router(ch_19_router)
@@ -29,3 +30,4 @@ app.exception_handler(StarletteHTTPException)(custom_http_exception_handler)
 app.exception_handler(RequestValidationError)(validation_exception_handler)
 app.include_router(ch_25_router)
 app.include_router(ch_26_router)
+app.include_router(ch_27_router)
