@@ -1,6 +1,5 @@
 from fastapi import FastAPI
 from fastapi.exceptions import RequestValidationError
-from fastapi.staticfiles import StaticFiles
 from starlette.exceptions import HTTPException as StarletteHTTPException
 
 from src.learn.ch_19.router import router as ch_19_router
@@ -81,7 +80,7 @@ app = FastAPI(
     # docs_url="/documentation",
     redoc_url=None,
 )
-app.mount("/static", StaticFiles(directory="static"), name="static")
+# app.mount("/static", StaticFiles(directory="static"), name="static")
 app.include_router(ch_19_router)
 app.include_router(ch_20_router)
 app.include_router(ch_21_router)
