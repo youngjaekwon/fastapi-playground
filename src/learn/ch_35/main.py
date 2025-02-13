@@ -1,11 +1,11 @@
 import time
 
-from fastapi import APIRouter, Request
+from fastapi import Request, FastAPI
 
-router = APIRouter(prefix="/ch-35", tags=["ch.35"])
+app = FastAPI()
 
 
-# app.middleware("http")
+@app.middleware("http")
 async def add_process_time_header(request: Request, call_next):
     start_time = time.perf_counter()
     response = await call_next(request)
