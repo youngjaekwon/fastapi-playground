@@ -26,6 +26,7 @@ from src.learn.ch_33.router import router as ch_33_router
 from src.learn.ch_34.router import router as ch_34_router
 from src.learn.ch_37.router import router as ch_37_router, on_startup
 from src.learn.ch_38.main import router as ch_38_router
+from src.learn.ch_39.router import router as ch_39_router
 
 app = FastAPI()
 app.include_router(ch_19_router)
@@ -50,3 +51,4 @@ app.include_router(ch_34_router)
 app.include_router(ch_37_router)
 app.on_event("startup")(on_startup)
 app.include_router(ch_38_router)
+app.include_router(ch_39_router)
