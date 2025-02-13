@@ -166,6 +166,7 @@ cython_debug/
 
 # Database
 postgres-data/
+database.db
 
 .local.env
 
