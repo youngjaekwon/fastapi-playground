@@ -2,31 +2,31 @@ from fastapi import FastAPI
 from fastapi.exceptions import RequestValidationError
 from starlette.exceptions import HTTPException as StarletteHTTPException
 
-from src.learn.ch_19.router import router as ch_19_router
-from src.learn.ch_20.router import router as ch_20_router
-from src.learn.ch_21.router import router as ch_21_router
-from src.learn.ch_22.router import router as ch_22_router
-from src.learn.ch_23.router import router as ch_23_router
-from src.learn.ch_24.router import (
+from src.learn.docs.ch_19.router import router as ch_19_router
+from src.learn.docs.ch_20.router import router as ch_20_router
+from src.learn.docs.ch_21.router import router as ch_21_router
+from src.learn.docs.ch_22.router import router as ch_22_router
+from src.learn.docs.ch_23.router import router as ch_23_router
+from src.learn.docs.ch_24.router import (
     router as ch_24_router,
     unicorn_exception_handler,
     UnicornException,
     validation_exception_handler,
     custom_http_exception_handler,
 )
-from src.learn.ch_25.router import router as ch_25_router
-from src.learn.ch_26.router import router as ch_26_router
-from src.learn.ch_27.router import router as ch_27_router
-from src.learn.ch_28.router import router as ch_28_router
-from src.learn.ch_29.router import router as ch_29_router
-from src.learn.ch_30.router import router as ch_30_router
-from src.learn.ch_31.router import router as ch_31_router
-from src.learn.ch_32.router import router as ch_32_router
-from src.learn.ch_33.router import router as ch_33_router
-from src.learn.ch_34.router import router as ch_34_router
-from src.learn.ch_37.router import router as ch_37_router, on_startup
-from src.learn.ch_38.main import router as ch_38_router
-from src.learn.ch_39.router import router as ch_39_router
+from src.learn.docs.ch_25.router import router as ch_25_router
+from src.learn.docs.ch_26.router import router as ch_26_router
+from src.learn.docs.ch_27.router import router as ch_27_router
+from src.learn.docs.ch_28.router import router as ch_28_router
+from src.learn.docs.ch_29.router import router as ch_29_router
+from src.learn.docs.ch_30.router import router as ch_30_router
+from src.learn.docs.ch_31.router import router as ch_31_router
+from src.learn.docs.ch_32.router import router as ch_32_router
+from src.learn.docs.ch_33.router import router as ch_33_router
+from src.learn.docs.ch_34.router import router as ch_34_router
+from src.learn.docs.ch_37.router import router as ch_37_router, on_startup
+from src.learn.docs.ch_38.main import router as ch_38_router
+from src.learn.docs.ch_39.router import router as ch_39_router
 
 description = """
 ChimichangApp API helps you do awesome stuff.
